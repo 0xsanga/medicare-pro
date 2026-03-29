@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/Medicare_Logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -29,7 +30,7 @@ export default function Navbar() {
       <div className="w-full px-10 py-4 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <img
-            src="/src/assets/Medicare_Logo.png"
+            src={logo}
             alt="MediCare Pro"
             className="h-20 w-auto object-contain"
           />
