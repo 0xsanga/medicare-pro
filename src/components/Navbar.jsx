@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Solutions", href: "#features" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Resources", href: "#resources" },
+  { label: "Book a Demo", href: "#cta" },
 ];
 
 export default function Navbar() {
@@ -27,13 +27,13 @@ export default function Navbar() {
       }`}
     >
       <div className="w-full px-10 py-4 flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center gap-8">
-          <span className="text-xl font-extrabold text-[#003178] font-headline">
-            MediCare Pro
-          </span>
+          <img
+            src="/src/assets/Medicare_Logo.png"
+            alt="MediCare Pro"
+            className="h-20 w-auto object-contain"
+          />
 
-          {/* Desktop Links */}
           <div className="hidden md:flex gap-6">
             {navLinks.map((link) => (
               <a
@@ -47,7 +47,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <button className="text-[#003178] font-medium hover:text-blue-700 transition-all px-4 py-2">
             Sign In
@@ -57,7 +56,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-[#003178]"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -66,7 +64,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div

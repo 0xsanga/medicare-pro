@@ -66,7 +66,6 @@ export default function Features() {
   return (
     <section id="features" className="py-24 px-10 bg-[#f2f4f6]">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +85,6 @@ export default function Features() {
           </p>
         </motion.div>
 
-        {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, i) => (
             <motion.div
@@ -99,19 +97,14 @@ export default function Features() {
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
               className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 cursor-default"
             >
-              {/* Icon */}
               <div
                 className={`w-12 h-12 ${feature.iconBg} ${feature.iconColor} flex items-center justify-center rounded-xl mb-6`}
               >
                 {feature.icon}
               </div>
-
-              {/* Title */}
               <h3 className="font-headline text-lg font-bold text-[#003178] mb-3">
                 {feature.title}
               </h3>
-
-              {/* Description */}
               <p className="text-slate-500 leading-relaxed text-sm">
                 {feature.description}
               </p>

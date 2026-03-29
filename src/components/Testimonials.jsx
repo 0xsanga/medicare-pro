@@ -71,7 +71,6 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-24 px-10 bg-[#f7f9fb]">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -91,7 +90,6 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        {/* Testimonial Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <motion.div
@@ -104,17 +102,11 @@ export default function Testimonials() {
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
               className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col gap-6"
             >
-              {/* Quote Icon */}
               <MdFormatQuote size={36} className="text-[#003178] opacity-20" />
-
-              {/* Quote Text */}
               <p className="text-slate-600 leading-relaxed text-sm flex-1">
                 "{t.quote}"
               </p>
-
-              {/* Author */}
               <div className="flex items-center gap-4">
-                {/* Avatar */}
                 <div
                   className={`w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 ${t.color}`}
                 >

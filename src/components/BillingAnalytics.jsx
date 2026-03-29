@@ -19,9 +19,7 @@ export default function BillingAnalytics() {
     <section className="py-32 px-10 bg-[#f7f9fb]">
       <div className="max-w-7xl mx-auto flex flex-col gap-32">
 
-        {/* Row 1 — Billing */}
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          {/* Text */}
           <motion.div
             className="flex-1"
             initial="hidden"
@@ -42,7 +40,6 @@ export default function BillingAnalytics() {
               major insurance providers.
             </p>
 
-            {/* Checklist */}
             <ul className="space-y-4">
               {[
                 "Real-time claim status tracking",
@@ -60,7 +57,6 @@ export default function BillingAnalytics() {
               ))}
             </ul>
 
-            {/* Stat Cards */}
             <div className="grid grid-cols-2 gap-4 mt-10">
               <div className="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
                 <p className="text-slate-400 text-sm mb-1">Total Revenue</p>
@@ -75,7 +71,6 @@ export default function BillingAnalytics() {
             </div>
           </motion.div>
 
-          {/* Image */}
           <motion.div
             className="flex-1 w-full relative"
             initial="hidden"
@@ -94,9 +89,7 @@ export default function BillingAnalytics() {
           </motion.div>
         </div>
 
-        {/* Row 2 — Analytics */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
-          {/* Text */}
           <motion.div
             className="flex-1"
             initial="hidden"
@@ -117,7 +110,6 @@ export default function BillingAnalytics() {
               pixel-perfect accuracy.
             </p>
 
-            {/* Stat Highlights */}
             <div className="flex flex-col gap-4">
               {[
                 { label: "Avg. Recovery Rate", value: "92%", color: "bg-[#70d8c8]", width: "w-11/12" },
@@ -143,7 +135,6 @@ export default function BillingAnalytics() {
             </div>
           </motion.div>
 
-          {/* Image */}
           <motion.div
             className="flex-1 w-full relative"
             initial="hidden"

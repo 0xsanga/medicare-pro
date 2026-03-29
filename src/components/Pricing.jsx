@@ -75,7 +75,6 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-24 px-10 bg-[#f2f4f6]">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -94,7 +93,6 @@ export default function Pricing() {
           </p>
         </motion.div>
 
-        {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {plans.map((plan, i) => (
             <motion.div
@@ -108,7 +106,6 @@ export default function Pricing() {
                 plan.badge ? "shadow-xl scale-105" : ""
               }`}
             >
-              {/* Badge */}
               {plan.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <span className="bg-gradient-to-br from-[#003178] to-[#0d47a1] text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
@@ -117,7 +114,6 @@ export default function Pricing() {
                 </div>
               )}
 
-              {/* Plan Name & Description */}
               <div>
                 <h3 className="font-headline text-xl font-extrabold text-[#003178] mb-2">
                   {plan.name}
@@ -127,7 +123,6 @@ export default function Pricing() {
                 </p>
               </div>
 
-              {/* Price */}
               <div>
                 <span className="font-headline text-5xl font-extrabold text-[#003178]">
                   {plan.price}
@@ -135,17 +130,14 @@ export default function Pricing() {
                 <span className="text-slate-400 text-sm ml-2">{plan.period}</span>
               </div>
 
-              {/* CTA Button */}
               <button
                 className={`w-full py-3 rounded-lg font-bold text-sm transition-all active:scale-95 ${plan.buttonStyle}`}
               >
                 Get Started
               </button>
 
-              {/* Divider */}
               <hr className="border-slate-100" />
 
-              {/* Features */}
               <ul className="space-y-3">
                 {plan.features.map((feature) => (
                   <li
@@ -177,7 +169,6 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Bottom Note */}
         <motion.p
           className="text-center text-slate-400 text-sm mt-12"
           initial={{ opacity: 0 }}
